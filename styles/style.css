@@ -1,9 +1,9 @@
 body {
   margin: 0;
 
-  background: url('../img/background.jpg') no-repeat;
+  background: url("../img/background.jpg") no-repeat;
   background-size: cover;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 #memory-board {
@@ -55,6 +55,21 @@ body {
   transform: rotateY(-180deg) translateZ(1px);
   backface-visibility: hidden;
 }
+
+/* flipped toggle class */
+.card.flipped {
+  pointer-events: none;
+}
+
+.card.flipped .front {
+  transform: rotateY(0deg);
+}
+
+.card.flipped .back {
+  transform: rotateY(180deg);
+}
+
+/*  */
 
 #score {
   background-color: rgba(215, 44, 44, 0.8);

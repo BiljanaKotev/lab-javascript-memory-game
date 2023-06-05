@@ -25,10 +25,8 @@ class MemoryGame {
     }
     if (card1 === card2) {
       this.pairsGuessed += 1;
-    }
-    if (card1 === card2) {
       return true;
-    } else if (card1 != card2) {
+    } else {
       return false;
     }
   }
